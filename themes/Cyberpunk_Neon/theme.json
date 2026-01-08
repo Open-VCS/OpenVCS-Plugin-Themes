@@ -2,16 +2,10 @@
   "id": "cyberpunk",
   "name": "Cyberpunk Neon",
   "description": "High-contrast neon glow inspired by night city skylines.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "OpenVCS Team",
-  "styles": {
-    "global": ["global.css"],
-    "system": ["system.css"],
-    "dark": ["dark.css"],
-    "light": ["light.css"]
-  },
+  "styles": ["theme.css"],
   "markup": {
     "body": ["background.html"]
   }
 }
-

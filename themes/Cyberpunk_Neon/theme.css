@@ -1,20 +1,42 @@
-/* Shared neon styling for Cyberpunk theme */
+/* Cyberpunk neon theme (single stylesheet) */
 :root[data-theme-pack="cyberpunk"] {
+  color-scheme: dark;
   --ui-scale: 1.02;
-  --font: 'Inter', 'Cantarell', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --mono: 'Fira Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --font: 'Rajdhani', 'Space Grotesk', 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, monospace;
+  --bg:#05010a;
+  --surface:#0a0316;
+  --surface-2:#140628;
+  --text:#f7f3ff;
+  --muted:#8f8aa8;
+  --border:rgba(0,229,255,.18);
+  --accent:#ff2bd6;
+  --accent-2:#00e5ff;
+  --accent-3:#7cff6b;
+  --danger:#ff5f87;
+  --success:#46ffb1;
+  --warning:#ffd447;
   --shadow-ambient: 0 0 42px color-mix(in oklab, var(--accent-2) 26%, transparent);
   --glow-soft:
     0 0 0 1px color-mix(in oklab, var(--accent-2) 22%, transparent),
     0 0 26px color-mix(in oklab, var(--accent) 14%, transparent);
+  --shadow-1:
+    0 28px 70px rgba(0,0,0,.66),
+    0 0 0 1px color-mix(in oklab, var(--accent-2) 22%, transparent),
+    0 0 42px color-mix(in oklab, var(--accent) 16%, transparent);
+  --control-bg:#0b0517;
+  --control-bg-focus:#120927;
+  --control-border:#2a0e40;
+  --control-text:#f7f3ff;
+  --control-muted:#8f8aa8;
 }
 
 html[data-theme-pack="cyberpunk"] {
   background:
-    radial-gradient(900px circle at 18% 14%, color-mix(in oklab, var(--accent-2) 18%, transparent) 0%, transparent 62%),
-    radial-gradient(820px circle at 84% 18%, color-mix(in oklab, var(--accent) 18%, transparent) 0%, transparent 64%),
-    radial-gradient(1050px circle at 56% 120%, color-mix(in oklab, var(--accent) 12%, transparent) 0%, transparent 56%),
-    linear-gradient(180deg, color-mix(in oklab, var(--surface-2) 32%, transparent), transparent 55%),
+    radial-gradient(920px circle at 20% 12%, color-mix(in oklab, var(--accent-2) 22%, transparent) 0%, transparent 62%),
+    radial-gradient(860px circle at 82% 16%, color-mix(in oklab, var(--accent) 20%, transparent) 0%, transparent 64%),
+    radial-gradient(980px circle at 52% 120%, color-mix(in oklab, var(--accent-3) 12%, transparent) 0%, transparent 58%),
+    linear-gradient(180deg, color-mix(in oklab, var(--surface-2) 36%, transparent), transparent 58%),
     var(--bg);
 }
 
@@ -33,11 +55,11 @@ html[data-theme-pack="cyberpunk"] .cyberpunk-background {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.24;
+  opacity: 0.28;
   background:
-    linear-gradient(to right, color-mix(in oklab, var(--accent-2) 14%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in oklab, var(--accent) 10%, transparent) 1px, transparent 1px);
-  background-size: 120px 120px;
+    linear-gradient(to right, color-mix(in oklab, var(--accent-2) 18%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--accent) 12%, transparent) 1px, transparent 1px);
+  background-size: 110px 110px;
   transform: translateZ(0);
 }
 
@@ -46,9 +68,9 @@ html[data-theme-pack="cyberpunk"] .cyberpunk-scanlines {
   inset: 0;
   z-index: 2;
   pointer-events: none;
-  opacity: 0.08;
+  opacity: 0.1;
   background:
-    radial-gradient(circle at 50% 12%, color-mix(in oklab, var(--accent-2) 16%, transparent), transparent 58%),
+    radial-gradient(circle at 50% 12%, color-mix(in oklab, var(--accent-2) 18%, transparent), transparent 60%),
     repeating-linear-gradient(
       to bottom,
       color-mix(in oklab, var(--text) 10%, transparent) 0px,
@@ -56,7 +78,7 @@ html[data-theme-pack="cyberpunk"] .cyberpunk-scanlines {
       transparent 1px,
       transparent 3px
     );
-  mix-blend-mode: overlay;
+  mix-blend-mode: soft-light;
   animation: cyberpunk-scanlines 8s linear infinite;
 }
 
@@ -89,6 +111,7 @@ html[data-theme-pack="cyberpunk"] .tbtn.primary:not(:disabled) {
   border: none;
   color: #07010a;
   text-shadow: 0 0 18px color-mix(in oklab, var(--accent-2) 22%, transparent);
+  box-shadow: var(--glow-soft);
 }
 
 html[data-theme-pack="cyberpunk"] .btn.primary:not(:disabled):hover,
@@ -96,3 +119,16 @@ html[data-theme-pack="cyberpunk"] .tbtn.primary:not(:disabled):hover {
   filter: brightness(1.08);
 }
 
+html[data-theme-pack="cyberpunk"] .left-head {
+  background: color-mix(in oklab, var(--surface-2) 70%, transparent);
+}
+
+html[data-theme-pack="cyberpunk"] .row:hover {
+  background: color-mix(in oklab, var(--accent-2) 12%, transparent);
+}
+
+html[data-theme-pack="cyberpunk"] .row.active {
+  background: color-mix(in oklab, var(--accent) 18%, transparent);
+  border-color: color-mix(in oklab, var(--accent) 42%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--accent-2) 18%, transparent);
+}
