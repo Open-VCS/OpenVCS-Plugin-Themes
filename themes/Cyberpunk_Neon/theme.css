@@ -96,7 +96,7 @@ html[data-theme-pack="cyberpunk"] .cyberpunk-scanlines {
       transparent 3px
     );
   mix-blend-mode: screen;
-  animation: cyberpunk-scanlines 7s linear infinite;
+  animation: none !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
