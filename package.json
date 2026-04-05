@@ -3,15 +3,14 @@
   "version": "0.1.0",
   "description": "Official OpenVCS theme plugin",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/Open-VCS/OpenVCS-OfficialThemes",
+  "homepage": "https://github.com/Open-VCS/OpenVCS-Plugin-Themes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Open-VCS/OpenVCS-OfficialThemes"
+    "url": "https://github.com/Open-VCS/OpenVCS-Plugin-Themes"
   },
   "bugs": {
-    "url": "https://github.com/Open-VCS/OpenVCS-OfficialThemes/issues"
+    "url": "https://github.com/Open-VCS/OpenVCS-Plugin-Themes/issues"
   },
-  "private": true,
   "openvcs": {
     "id": "openvcs.official-themes",
     "name": "Official Themes",
