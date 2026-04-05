@@ -1,0 +1,39 @@
+{
+  "name": "@openvcs/official-themes",
+  "version": "0.1.0",
+  "description": "Official OpenVCS theme plugin",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/Open-VCS/OpenVCS-OfficialThemes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Open-VCS/OpenVCS-OfficialThemes"
+  },
+  "bugs": {
+    "url": "https://github.com/Open-VCS/OpenVCS-OfficialThemes/issues"
+  },
+  "private": true,
+  "openvcs": {
+    "id": "openvcs.official-themes",
+    "name": "Official Themes",
+    "category": "Themes",
+    "tags": [
+      "themes",
+      "official"
+    ],
+    "version": "0.1.0",
+    "author": "OpenVCS Team",
+    "description": "Official OpenVCS themes shipped as a plugin so they can be enabled and disabled.",
+    "default_enabled": false
+  },
+  "scripts": {
+    "build": "node -e \"process.exit(0)\"",
+    "test": "npm run build"
+  },
+  "files": [
+    "package.json",
+    "themes/",
+    "README.md",
+    "LICENSE",
+    "icon.png"
+  ]
+}
