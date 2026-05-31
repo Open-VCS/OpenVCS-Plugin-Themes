@@ -1,7 +1,8 @@
 {
   "name": "@openvcs/official-themes",
   "version": "0.1.0",
-  "description": "Official OpenVCS theme plugin",
+  "description": "Official OpenVCS theme plugin shipped as a plugin so they can be enabled and disabled.",
+  "author": "OpenVCS Team",
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/Open-VCS/OpenVCS-Plugin-Themes",
   "repository": {
@@ -19,9 +20,6 @@
       "themes",
       "official"
     ],
-    "version": "0.1.0",
-    "author": "OpenVCS Team",
-    "description": "Official OpenVCS themes shipped as a plugin so they can be enabled and disabled.",
     "default_enabled": false
   },
   "scripts": {
