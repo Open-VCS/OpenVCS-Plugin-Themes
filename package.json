@@ -1,6 +1,6 @@
 {
   "name": "@openvcs/official-themes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official OpenVCS theme plugin shipped as a plugin so they can be enabled and disabled.",
   "author": "OpenVCS Team",
   "license": "GPL-3.0-or-later",
